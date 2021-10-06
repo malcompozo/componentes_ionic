@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- se agrega el avatar al toolbar pero no se usa el components heredado -->
+    <ion-buttons slot="start">
+      <ion-back-button 
+      text="Atras" 
+      color="warning" 
+      mode="ios"
+      defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title mode="ios">Avatar</ion-title>
+
+    <!-- avatar -->
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <!-- <img src="/assets/profile.png" /> -->
+        <ion-img src="/assets/profile.png"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- utilizando chip + avatar y recoriendo lista con ngFor -->
+  <ion-chip color="primary" outline="true"
+    *ngFor="let item of [1,1,1]">
+    <ion-avatar>
+      <ion-img src="/assets/profile.png"></ion-img>
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <!-- agregando avatar a un ion-item -->
+  <ion-list>
+    <ion-item >
+      <ion-avatar slot="start">
+        <img src="/assets/profile.png" />
+      </ion-avatar>
+      <ion-label>Todo está bien</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

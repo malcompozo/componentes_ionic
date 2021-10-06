@@ -23,6 +23,11 @@ export class HomePage {
       icon: 'alert-circle-outline',
       name: 'Alert',
       redirecTo: '/alert'
+    },
+    {
+      icon: 'person-circle-outline',
+      name: 'Avatar',
+      redirecTo: '/avatar'
     }
   ];
 
