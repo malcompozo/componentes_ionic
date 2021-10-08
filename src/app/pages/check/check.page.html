@@ -1,0 +1,16 @@
+<app-header mode="ios" titulo = "Check-box"></app-header>
+
+<ion-content>
+
+  <ion-list> <!-- data traida desde page.ts -->
+    <ion-item *ngFor="let item of data"
+              (click)="onClick( item )"> <!-- recorer la data con ngFor, llamar metodo (click) -->
+      <ion-checkbox [color]="item.name" 
+                    slot="start"
+                    [(ngModel)]="item.selected">
+      </ion-checkbox> <!-- llamando el [color] de la data, [(ngModel)] captura la opcion seleccionada desde la data -->
+      <ion-label>{{item.name}}</ion-label> <!-- consumiento la data -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>

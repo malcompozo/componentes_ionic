@@ -28,6 +28,21 @@ export class HomePage {
       icon: 'person-circle-outline',
       name: 'Avatar',
       redirecTo: '/avatar'
+    },
+    {
+      icon: 'ellipsis-vertical-circle-outline',
+      name: 'Botones',
+      redirecTo: '/button'
+    },
+    {
+      icon: 'card-outline',
+      name: 'Card',
+      redirecTo: '/card'
+    },
+    {
+      icon: 'checkbox-outline',
+      name: 'Check-box',
+      redirecTo: '/check'
     }
   ];
 
