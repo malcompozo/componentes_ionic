@@ -1,0 +1,50 @@
+<app-header mode="ios" titulo = "DateTime"></app-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-list-header>
+      <ion-label>Dato de nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Fecha de nacimiento</ion-label>
+        <ion-datetime 
+                display-format="DD/MM/YYYY"
+                [value]= "fechaDefault.toISOString()"
+                (ionChange)="cambioFecha( $event )"> 
+                <!-- display-format PARA DARLE FORMATO A LA FECHA MOSTRADA, 
+                    [value]= "fechaDefault.toISOString()" PARA TRANSFORMAR UNA FECHA POR DEFAUL DESDE EL PAGE.TS 
+                    (ionChange)="cambioFecha( $event )"> PARA CAPTURAR LA FECHA QUE SE CAMBIO CON LA FUNCION DEL .TS-->
+        </ion-datetime>
+    </ion-item>
+
+    <!-- SEGUNDO BLOQUE DE RESTRICCIONES-->
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Máximo y mínimo</ion-label>
+        <ion-datetime
+                display-format="DD/MM/YYYY"
+                min="2000-12-31"
+                max="2030-12-31">
+                <!-- display-format PARA DARLE FORMATO A LA FECHA MOSTRADA,
+                  min y max PARA LIMITAR EL MINOMO DE FECHA INGRESADA,
+                  ( si limito el display-format solo a años debo ingresar solo años en min y max)-->
+        </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Custom</ion-label>
+        <ion-datetime 
+                [pickerOptions]="customPickerOptions">
+                <!-- pickerOptions HACE REFERENCIA A UNA PROPIEDAD DE CLASE LLAMADA DESDE EL PAGE.TS -->
+        </ion-datetime>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

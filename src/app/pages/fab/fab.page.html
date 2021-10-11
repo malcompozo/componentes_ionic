@@ -1,0 +1,28 @@
+<app-header mode="ios" titulo = "DateTime"></app-header>
+
+<ion-content>
+
+  <!-- fab puesto en la parte inferior derecha fijado en la pantalla -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  
+    <!-- desplegable del fab hacia arriba -->
+    <!-- color custom para los logos se agregan al fichero variables.scss globales -->
+    <ion-fab-list side="top">
+      <ion-fab-button color="ionic"><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button color="angular"><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+    <!-- desplegable del fab hacia la izquierda -->
+    <!-- color custom para los logos se agregan al fichero variables.scss globales -->
+    <ion-fab-list side="start">
+      <ion-fab-button color="facebook"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button color="github"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+  </ion-fab>
+
+</ion-content>
