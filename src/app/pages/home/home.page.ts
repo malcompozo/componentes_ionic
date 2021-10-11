@@ -53,6 +53,21 @@ export class HomePage {
       icon: 'star-outline',
       name: 'Fab',
       redirecTo: '/fab'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid-Row-Col',
+      redirecTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite Scroll',
+      redirecTo: '/infinite-scroll'
+    },
+    {
+      icon: 'hammer-outline',
+      name: 'Input',
+      redirecTo: '/input'
     }
   ];
 

@@ -1,0 +1,28 @@
+<app-header mode="ios" titulo = "Grid-Row-Col"></app-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <!-- controla el tamaño (size) en diferentes tipos de pantalla -->
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6"
+              *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+    
+      <ion-card>
+        <ion-img src="/assets/profile.png"></ion-img>
+      </ion-card>
+
+      <ion-card-header>
+        <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        <ion-card-title>Awesome Title</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Awesome content
+      </ion-card-content>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
