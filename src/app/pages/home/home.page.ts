@@ -68,6 +68,11 @@ export class HomePage {
       icon: 'hammer-outline',
       name: 'Input',
       redirecTo: '/input'
+    },
+    {
+      icon: 'list-outline',
+      name: 'Listas',
+      redirecTo: '/list'
     }
   ];
 
